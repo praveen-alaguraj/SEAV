@@ -1,0 +1,4 @@
+source;share/seav_bot/local_setup.bash
+source;share/seav_bot/local_setup.dsv
+source;share/seav_bot/local_setup.sh
+source;share/seav_bot/local_setup.zsh
