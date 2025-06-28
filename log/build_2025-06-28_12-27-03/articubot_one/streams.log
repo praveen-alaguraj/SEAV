@@ -1,0 +1,54 @@
+[0.009s] Invoking command in '/home/seav/Praveen/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake /home/seav/Praveen/src/seav_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/seav/Praveen/install/articubot_one
+[0.151s] -- The C compiler identification is GNU 11.4.0
+[0.262s] -- The CXX compiler identification is GNU 11.4.0
+[0.270s] -- Detecting C compiler ABI info
+[0.329s] -- Detecting C compiler ABI info - done
+[0.335s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.335s] -- Detecting C compile features
+[0.335s] -- Detecting C compile features - done
+[0.338s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.412s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.413s] -- Detecting CXX compile features
+[0.413s] -- Detecting CXX compile features - done
+[0.418s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.538s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.592s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.628s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.702s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.704s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.705s] -- Added test 'lint_cmake' to check CMake code style
+[0.706s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.707s] -- Added test 'xmllint' to check XML markup files
+[0.709s] -- Configuring done
+[0.711s] -- Generating done
+[0.712s] -- Build files have been written to: /home/seav/Praveen/build/articubot_one
+[0.715s] Invoked command in '/home/seav/Praveen/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake /home/seav/Praveen/src/seav_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/seav/Praveen/install/articubot_one
+[0.717s] Invoking command in '/home/seav/Praveen/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake --build /home/seav/Praveen/build/articubot_one -- -j8 -l8
+[0.746s] Invoked command in '/home/seav/Praveen/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake --build /home/seav/Praveen/build/articubot_one -- -j8 -l8
+[0.754s] Invoking command in '/home/seav/Praveen/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake --install /home/seav/Praveen/build/articubot_one
+[0.760s] -- Install configuration: ""
+[0.761s] -- Execute custom install script
+[0.761s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/config/empty.yaml
+[0.768s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[0.775s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[0.781s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[0.788s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[0.795s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[0.802s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/worlds/empty.world
+[0.828s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[0.835s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[0.842s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[0.848s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[0.855s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/environment/path.sh
+[0.862s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/environment/path.dsv
+[0.869s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/local_setup.bash
+[0.876s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/local_setup.sh
+[0.883s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/local_setup.zsh
+[0.889s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/local_setup.dsv
+[0.896s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/package.dsv
+[0.903s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[0.910s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[0.917s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[0.924s] -- Symlinking: /home/seav/Praveen/install/articubot_one/share/articubot_one/package.xml
+[0.932s] Invoked command in '/home/seav/Praveen/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seav/ss25/install/wheel_odometry:/home/seav/ss25/install/seav_nav2:/home/seav/ss25/install/fake_odometry:/home/seav/ss25/install/bringup_pkg:/opt/ros/humble /usr/bin/cmake --install /home/seav/Praveen/build/articubot_one
