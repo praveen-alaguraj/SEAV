@@ -36,62 +36,28 @@
 
     <link name="chassis">
         <visual>
-            <origin xyz="0.55 0 0.20375"/>
+            <origin xyz="0.55 0 0.125"/>
             <geometry>
-                <box size="1.10 0.52 0.1975"/>
-            </geometry>
-            <material name="white"/>
-        </visual>
-        <visual>
-            <origin xyz="0.0475 0 0.07875"/>
-            <geometry>
-                <box size="0.095 0.52 0.0525"/>
-            </geometry>
-            <material name="white"/>
-        </visual>
-        <visual>
-            <origin xyz="0.475 0 0.07875"/>
-            <geometry>
-                <box size="0.35 0.52 0.0525"/>
-            </geometry>
-            <material name="white"/>
-        </visual>
-        <visual>
-            <origin xyz="1.0025 0 0.07875"/>
-            <geometry>
-                <box size="0.195 0.52 0.0525"/>
+                <box size="1.10 0.36 0.25"/>
             </geometry>
             <material name="white"/>
         </visual>
         
         <collision>
-            <origin xyz="0.55 0 0.20375"/>
+            <origin xyz="0.55 0 0.125"/>
             <geometry>
-                <box size="1.10 0.52 0.1975"/>
+                <box size="1.10 0.36 0.25"/>
             </geometry>
         </collision>
-        <collision>
-            <origin xyz="0.0475 0 0.07875"/>
-            <geometry>
-                <box size="0.095 0.52 0.0525"/>
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0.475 0 0.07875"/>
-            <geometry>
-                <box size="0.35 0.52 0.0525"/>
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="1.0025 0 0.07875"/>
-            <geometry>
-                <box size="0.195 0.52 0.0525"/>
-            </geometry>
-        </collision>       
+     
         <xacro:inertial_box mass="5.0" x="1.10" y="0.52" z="0.25">
             <origin xyz="0.55 0 0.125" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
+
+    <gazebo reference="chassis">
+        <material>Gazebo/White</material>
+    </gazebo>
     
     <!-- REAR LEFT WHEEL LINK -->
 
@@ -119,6 +85,10 @@
         </xacro:inertial_cylinder>
     </link>
 
+    <gazebo reference="rear_left_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
     <!-- REAR RIGHT WHEEL LINK -->
 
     <joint name="rear_right_wheel_joint" type="continuous">
@@ -144,6 +114,10 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
+
+    <gazebo reference="rear_right_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
 
     <!-- FRONT LEFT STEERING JOINT -->
     <joint name="front_left_steering_joint" type="revolute">
@@ -196,6 +170,10 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
+
+    <gazebo reference="front_left_wheel">
+        <material>Gazebo/Orange</material>
+    </gazebo>
    
     <!-- FRONT RIGHT STEERING JOINT -->
     <joint name="front_right_steering_joint" type="revolute">
@@ -248,5 +226,16 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
+
+    <gazebo reference="front_right_wheel">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <joint name="steering_wheel_joint" type="fixed">
+      <parent link="chassis"/>
+      <child link="steering_wheel_link"/>
+      <origin xyz="0 0 0"/>
+    </joint>
+    <link name="steering_wheel_link"/>
     
 </robot>
